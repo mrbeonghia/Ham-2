@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi feet và meters</title>
+</head>
+<body>
+<form action="">
+    Feet: <input type="number" id="num1" oninput="footToMeter(this.foot)" onchange="footToMeter(this.foot)"> <br>
+    <p>Meters: <span id="result1"></span></p>
+    Meters: <input type="number" id="num2" oninput="meterToFoot(this.meter)" onchange="meterToFoot(this.meter)"> <br>
+    <p>Feet: <span id="result2"></span></p>
+</form>
+<script>
+    function footToMeter(foot){
+        foot = parseFloat(document.getElementById('num1').value);
+        document.getElementById('result1').innerHTML = foot*0.305;
+    }
+    function meterToFoot(meter){
+        meter = parseFloat(document.getElementById('num2').value);
+        document.getElementById('result2').innerHTML = meter*3.279;
+    }
+
+</script>
+</body>
+</html>

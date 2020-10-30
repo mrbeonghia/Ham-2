@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let a = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let b = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let text = prompt('Enter star name');
+    function check(name){
+        for (let i = 0; i <= a.length; i++) {
+            console.log(a[i])
+                if (text === a[i]){
+                    document.write(b[i]);
+                    console.log(a[i]);
+                }
+        }
+    }
+</script>
+</body>
+</html>
